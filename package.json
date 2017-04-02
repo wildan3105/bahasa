@@ -1,0 +1,33 @@
+{
+  "name": "bahasa",
+  "version": "1.0.0",
+  "description": "Filter out a list of daily indonesian 'bahasa' words",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wldn/bahasa.git"
+  },
+  "author": "Wildan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wldn/bahasa/issues"
+  },
+  "homepage": "https://github.com/wldn/bahasa#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-latest": "^6.24.0",
+    "jest": "^19.0.2",
+    "watch": "^1.0.2"
+  }
+}
