@@ -7,7 +7,8 @@
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build"
   },
   "babel": {
     "presets": [
@@ -28,6 +29,7 @@
     "babel-cli": "^6.24.0",
     "babel-preset-latest": "^6.24.0",
     "jest": "^19.0.2",
+    "np": "^2.13.1",
     "watch": "^1.0.2"
   }
 }
